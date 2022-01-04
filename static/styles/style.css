@@ -204,6 +204,10 @@ textarea {
 
 /* Services Section */
 
+#services{
+  padding: 2%;
+}
+
 #services h1 {
   color: #4e9f3d;
   font-weight: 700;
@@ -236,6 +240,10 @@ textarea {
 }
 
 /* About Section */
+
+#about{
+  padding: 2% 0;
+}
 
 #about h1, h2{
   color: #4e9f3d;
@@ -282,3 +290,34 @@ textarea {
   background-color: #1e5128;
   color: #d8e9a8;
 }
+
+/* Pricing Section */
+#pricing{
+  padding: 2% 0;
+}
+
+.pricing-heading{
+  color: #4e9f3d;
+}
+
+.pricing-container{
+  margin: 3% 4%;
+  padding: 0 15%;
+}
+
+.pricing-container .card{
+  color: #d8e9a8;
+  background-color: #1e5128;
+  border: 13px solid #d8e9a8;
+  border-radius: 13px;
+}
+
+.pricing-container .card .card-title{
+  font-family: 'Roboto', sans-serif; 
+
+}
+.pricing-container .card .card-text{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
