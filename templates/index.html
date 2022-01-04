@@ -1,415 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- My css -->
-    <link
-      rel="stylesheet"
-      href="{{url_for('static', filename='styles/style.css')}}"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+  <!-- My css -->
+  <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Oswald:wght@500&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
 
-    <title>Mutant MMA Academy</title>
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="{{url_for('static', filename='images/mma.ico')}}"
-    />
-  </head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <body>
-    <section id="title">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg font-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="{{url_for('static', filename='images/Logo.ico')}}"
-              alt="Logo"
-              class="logo"
-            />
-          </a>
+  <title>Mutant MMA Academy</title>
+  <link rel="shortcut icon" type="image/jpg" href="{{url_for('static', filename='images/mma.ico')}}" />
+</head>
 
-          <button
-            class="navbar-toggler navbar-dark"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-sm-2">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Title Section -->
+<body>
+  <section id="title">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg font-2">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="title-container">
-              <h1 class="title-heading font-1">Learn Mixed Martial Arts</h1>
-              <p class="title-quote font-3">
-                "Everyone must choose one of two pains: The pain of discipline
-                or the pain of regret."
-              </p>
-            </div>
+        <a class="navbar-brand" href="#">
+          <img src="{{url_for('static', filename='images/Logo.ico')}}" alt="Logo" class="logo" />
+        </a>
+
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-sm-2">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title Section -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="title-container">
+            <h1 class="title-heading font-1">Learn Mixed Martial Arts</h1>
+            <p class="title-quote font-3">
+              "Everyone must choose one of two pains: The pain of discipline
+              or the pain of regret."
+            </p>
           </div>
-          <div class="col-lg-6">
-            <img
-              src="{{url_for('static', filename='images/main.jpg')}}"
-              alt="Title Image"
-              class="title-image"
-            />
+        </div>
+        <div class="col-lg-6">
+          <img src="{{url_for('static', filename='images/main.jpg')}}" alt="Title Image" class="title-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1 class="font-1 align-center my-4">About Us</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit amet
+      sapiente id doloremque! Ratione iusto perferendis asperiores explicabo
+      fugiat expedita, vero mollitia, modi dolores reiciendis, velit saepe sed
+      blanditiis. Possimus, nobis! Dolore reprehenderit assumenda neque. In
+      doloribus et voluptatem ex excepturi suscipit dignissimos fugit
+      consequuntur sint reiciendis adipisci deleniti harum voluptate tenetur,
+      qui quasi nihil aliquam repellat commodi vitae omnis dolores. Nihil nemo
+      laudantium ea porro cupiditate eligendi repudiandae eveniet veritatis
+      quasi fugiat quis quidem nostrum ad ab doloribus, sequi odio voluptates.
+      Enim dolorum rerum repellat numquam maxime, quia quod, adipisci
+      architecto quidem recusandae, culpa dignissimos soluta et natus?
+    </p>
+    <h2 class="font-1 align-center my-4">Main Instructor</h2>
+
+    <div class="card mb-5 instructor-card">
+      <div class="row g-0 justify-content-center">
+        <div class="col-12 col-sm-4 col-md-3">
+          <img src="{{url_for('static', filename='images/main.jpg')}}" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-12 col-sm-8 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title align-center mb-3 font-1" style="font-size: 1.4rem;">Angad Bisht</h5>
+            <p class="card-text font-2">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <p class="card-text font-3">
+              Professional Record: 6/3
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section id="about">
-      <h1 class="font-1 align-center my-4">About Us</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit amet
-        sapiente id doloremque! Ratione iusto perferendis asperiores explicabo
-        fugiat expedita, vero mollitia, modi dolores reiciendis, velit saepe sed
-        blanditiis. Possimus, nobis! Dolore reprehenderit assumenda neque. In
-        doloribus et voluptatem ex excepturi suscipit dignissimos fugit
-        consequuntur sint reiciendis adipisci deleniti harum voluptate tenetur,
-        qui quasi nihil aliquam repellat commodi vitae omnis dolores. Nihil nemo
-        laudantium ea porro cupiditate eligendi repudiandae eveniet veritatis
-        quasi fugiat quis quidem nostrum ad ab doloribus, sequi odio voluptates.
-        Enim dolorum rerum repellat numquam maxime, quia quod, adipisci
-        architecto quidem recusandae, culpa dignissimos soluta et natus?
-      </p>
-      <h2 class="font-1 align-center my-4">Main Instructor</h2>
-
-      <div class="card mb-3">
-        <div class="row justify-content-center g-0">
-          <div class="col-12 col-sm-4 col-md-3">
-            <img
-              src="{{url_for('static', filename='images/main.jpg')}}"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
+    <div class="container-fluid fighters-section">
+      <h2 class="font-1 align-center my-4">Our Professional Fighters</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row justify-content-center align-center gy-md-5 gy-4">
+                <div class="col-sm-12">
+                  <div class="card about-card" style="width: 18rem">
+                    <img src="{{url_for('static', filename='images/main.jpg')}}" class="card-img-top"
+                      alt="Angad Bisht" />
+                    <div class="card-body">
+                      <h5 class="card-title">Angad Bisht</h5>
+                      <h6>Professional Record: 6/3</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-sm-8 col-md-6">
+
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row justify-content-center align-center gy-md-5 gy-4">
+                <div class="col-sm-12">
+                  <div class="card about-card" style="width: 18rem">
+                    <img src="{{url_for('static', filename='images/main.jpg')}}" class="card-img-top"
+                      alt="Angad Bisht" />
+                    <div class="card-body">
+                      <h5 class="card-title">Angad Bisht</h5>
+                      <h6>Professional Record: 6/3</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row justify-content-center align-center gy-md-5 gy-4">
+                <div class="col-sm-12">
+                  <div class="card about-card" style="width: 18rem">
+                    <img src="{{url_for('static', filename='images/main.jpg')}}" class="card-img-top"
+                      alt="Angad Bisht" />
+                    <div class="card-body">
+                      <h5 class="card-title">Angad Bisht</h5>
+                      <h6>Professional Record: 6/3</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="my-5 font-2">
+    <h1 class="align-center my-4 font-1">We Teach You</h1>
+    <div class="container-lg">
+      <div class="row justify-content-center gx-md-5 gx-sm-1 gy-md-5 gy-4">
+        <div class="col-6 col-md-4">
+          <div class="card services-card">
+            <img src="{{url_for('static', filename='images/Jiu Jitsu.jpg')}}" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Angad Bisht</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Professional Record: 6/3</small>
-              </p>
+              <h5 class="card-title">Jiu Jitsu</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card services-card">
+            <img src="{{url_for('static', filename='images/Boxing.jpg')}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Boxing</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card services-card">
+            <img src="{{url_for('static', filename='images/Wrestling.jpg')}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Wresting</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card services-card">
+            <img src="{{url_for('static', filename='images/Kick Boxing.jpg')}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Kick Boxing</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card services-card">
+            <img src="{{url_for('static', filename='images/Conditioning.jpg')}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Conditioning</h5>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="container-fluid fighters-section">
-        <h2 class="font-1 align-center my-4">Our Professional Fighters</h2>
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container-fluid">
-                <div
-                  class="row justify-content-center align-center gy-md-5 gy-4"
-                >
-                  <div class="col-sm-12">
-                    <div class="card about-card" style="width: 18rem">
-                      <img
-                        src="{{url_for('static', filename='images/main.jpg')}}"
-                        class="card-img-top"
-                        alt="Angad Bisht"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Angad Bisht</h5>
-                        <h6>Professional Record: 6/3</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="container-fluid">
-                <div
-                  class="row justify-content-center align-center gy-md-5 gy-4"
-                >
-                  <div class="col-sm-12">
-                    <div class="card about-card" style="width: 18rem">
-                      <img
-                        src="{{url_for('static', filename='images/main.jpg')}}"
-                        class="card-img-top"
-                        alt="Angad Bisht"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Angad Bisht</h5>
-                        <h6>Professional Record: 6/3</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container-fluid">
-                <div
-                  class="row justify-content-center align-center gy-md-5 gy-4"
-                >
-                  <div class="col-sm-12">
-                    <div class="card about-card" style="width: 18rem">
-                      <img
-                        src="{{url_for('static', filename='images/main.jpg')}}"
-                        class="card-img-top"
-                        alt="Angad Bisht"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Angad Bisht</h5>
-                        <h6>Professional Record: 6/3</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container-fluid background">
+      <h1 class="align-center contact-heading font-1">Contact Us</h1>
+      <div class="contact-form font-2">
+        <form action="/contact" method="post">
+          <input type="text" class="name" name="name" id="name" placeholder="Name: " />
+          <br />
+          <input type="tel" class="phone" name="phone" id="phone" placeholder="Phone Number: " />
+          <br />
+          <input type="email" class="email" name="email" id="email" placeholder="Gmail: " />
+          <br />
+          <textarea name="query" id="query" cols="23" rows="10" placeholder="Enter your query: "></textarea>
+          <br />
+          <button type="submit" class="contact-button">Submit</button>
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="my-5 font-2">
-      <h1 class="align-center my-4 font-1">We Teach You</h1>
-      <div class="container-lg">
-        <div class="row justify-content-center gx-md-5 gx-sm-1 gy-md-5 gy-4">
-          <div class="col-6 col-md-4">
-            <div class="card services-card">
-              <img
-                src="{{url_for('static', filename='images/Jiu Jitsu.jpg')}}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Jiu Jitsu</h5>
-              </div>
-            </div>
-          </div>
+  <!-- Footer -->
+  <footer id="footer" class="white-section">
+    <div class="navigation"></div>
+    <div class="social">
+      <a href="https://www.youtube.com/c/AngadBishtMMA" target="_blank">
+        <i class="fab fa-youtube fa-2x icons"></i>
+      </a>
+      <a href="https://www.instagram.com/mutantmmacademydehradun/" target="_blank">
+        <i class="fab fa-instagram fa-2x icons"></i>
+      </a>
+      <a href="https://m.facebook.com/profile.php?id=100064166791452&fref=mentions&_rdr" target="_blank">
+        <i class="fab fa-facebook fa-2x icons"></i>
+      </a>
+      <a href="mailto:unorthodoxtraining@gmail.com" target="_top">
+        <i class="fas fa-envelope fa-2x icons"></i>
+      </a>
+    </div>
+    <p class="font-3">© Copyright Mutant MMA Academy</p>
+  </footer>
 
-          <div class="col-6 col-md-4">
-            <div class="card services-card">
-              <img
-                src="{{url_for('static', filename='images/Boxing.jpg')}}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Boxing</h5>
-              </div>
-            </div>
-          </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-          <div class="col-6 col-md-4">
-            <div class="card services-card">
-              <img
-                src="{{url_for('static', filename='images/Wrestling.jpg')}}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Wresting</h5>
-              </div>
-            </div>
-          </div>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-          <div class="col-6 col-md-4">
-            <div class="card services-card">
-              <img
-                src="{{url_for('static', filename='images/Kick Boxing.jpg')}}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Kick Boxing</h5>
-              </div>
-            </div>
-          </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-          <div class="col-6 col-md-4">
-            <div class="card services-card">
-              <img
-                src="{{url_for('static', filename='images/Conditioning.jpg')}}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Conditioning</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container-fluid background">
-        <h1 class="align-center contact-heading font-1">Contact Us</h1>
-        <div class="contact-form font-2">
-          <form action="/contact" method="post">
-            <input
-              type="text"
-              class="name"
-              name="name"
-              id="name"
-              placeholder="Name: "
-            />
-            <br />
-            <input
-              type="tel"
-              class="phone"
-              name="phone"
-              id="phone"
-              placeholder="Phone Number: "
-            />
-            <br />
-            <input
-              type="email"
-              class="email"
-              name="email"
-              id="email"
-              placeholder="Gmail: "
-            />
-            <br />
-            <textarea
-              name="query"
-              id="query"
-              cols="23"
-              rows="10"
-              placeholder="Enter your query: "
-            ></textarea>
-            <br />
-            <button type="submit" class="contact-button">Submit</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer" class="white-section">
-      <div class="navigation"></div>
-      <div class="social">
-        <a href="https://www.youtube.com/c/AngadBishtMMA" target="_blank">
-          <i class="fab fa-youtube fa-2x icons"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/mutantmmacademydehradun/"
-          target="_blank"
-        >
-          <i class="fab fa-instagram fa-2x icons"></i>
-        </a>
-        <a
-          href="https://m.facebook.com/profile.php?id=100064166791452&fref=mentions&_rdr"
-          target="_blank"
-        >
-          <i class="fab fa-facebook fa-2x icons"></i>
-        </a>
-        <a href="mailto:unorthodoxtraining@gmail.com" target="_top">
-          <i class="fas fa-envelope fa-2x icons"></i>
-        </a>
-      </div>
-      <p class="font-3">© Copyright Mutant MMA Academy</p>
-    </footer>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
-    <!-- MY Javascript -->
-    <script src="{{url_for('static', filename='js/index.js')}}"></script>
-  </body>
+  <!-- MY Javascript -->
+  <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</body>
+
 </html>
