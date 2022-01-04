@@ -84,6 +84,10 @@ p:hover {
   position: relative;
 }
 
+#contact ::placeholder{
+  padding-left: 5px;
+}
+
 #contact::after {
   content: '';
   background: url('../images/contact.jpg');
@@ -240,7 +244,7 @@ textarea {
 }
 
 #about p{
-  padding: 0% 7%;
+  padding: 0% 10%;
 }
 
 .instructor-card{
