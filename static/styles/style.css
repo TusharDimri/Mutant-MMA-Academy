@@ -118,8 +118,8 @@ p:hover {
 .contact-form input {
   background: transparent;
   border: 1px solid #1e5128;
-  margin: 3px 0;
-  width: 20rem;
+  margin: 5px 0;
+  width: 16rem;
 }
 
 ::placeholder {
@@ -130,7 +130,7 @@ p:hover {
   width: 188px;
   background: transparent;
   height: 100px;
-  width: 20rem;
+  width: 16rem;
   border: 1px solid #1e5128;
 }
 
@@ -177,6 +177,16 @@ textarea {
 
 #footer .icons {
   padding: 1.2rem;
+}
+
+.social{
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social a{
+    margin: 0 5px;
 }
 
 /* Up Arrow */
