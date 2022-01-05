@@ -12,15 +12,15 @@ p:hover {
   cursor: default;
 }
 
-.font-1{
+.font-1 {
   font-family: 'Roboto', sans-serif;
 }
 
-.font-2{
+.font-2 {
   font-family: 'Oswald', sans-serif;
 }
 
-.font-3{
+.font-3 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,8 +40,8 @@ p:hover {
   color: #4e9f3d;
 }
 
-.nav-link:hover{
-  color: #1e5128!important;
+.nav-link:hover {
+  color: #1e5128 !important;
 }
 
 #title {
@@ -84,7 +84,7 @@ p:hover {
   position: relative;
 }
 
-#contact ::placeholder{
+#contact ::placeholder {
   padding-left: 5px;
 }
 
@@ -210,12 +210,23 @@ textarea {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-
-
 /* Services Section */
 
-#services{
+#services {
+  margin: auto;
   padding: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+  #services {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #services {
+    max-width: 75%;
+  }
 }
 
 #services h1 {
@@ -251,25 +262,26 @@ textarea {
 
 /* About Section */
 
-#about{
+#about {
   padding: 2% 0;
 }
 
-#about h1, h2{
+#about h1,
+h2 {
   color: #4e9f3d;
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-#about p{
+#about p {
   padding: 0% 10%;
 }
 
-.address{
+.address {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px!important;
+  width: 200px !important;
   height: 70px;
   margin: 0 auto;
   padding: 2% 5px;
@@ -283,78 +295,74 @@ textarea {
   color: #d8e9a8;
 }
 
-.address-heading{
+.address-heading {
   display: block;
 }
 
-.address:hover{
-  color: #4e9f3d!important;
+.address:hover {
+  color: #4e9f3d !important;
   border-color: #4e9f3d;
 }
 
-.instructor-card{
+.instructor-card {
   margin: 0 10%;
-  background-color: #1e5128!important;
-  color: #d8e9a8!important;
+  background-color: #1e5128 !important;
+  color: #d8e9a8 !important;
 }
 
-.fighters-section{
+.fighters-section {
   background-color: black;
   padding: 3% 25%;
 }
 
-.fighters-section h2{
+.fighters-section h2 {
   color: #d8e9a8;
-  margin-bottom: 3%!important;
+  margin-bottom: 3% !important;
 }
 
-.fighters-section h5{
+.fighters-section h5 {
   font-family: 'Oswald', sans-serif;
 }
 
-.fighters-section h6{
+.fighters-section h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-.about-card{
+.about-card {
   display: block;
   margin: 0 auto 3% auto;
-  
 }
 
-.about-card .card-body{
+.about-card .card-body {
   background-color: #1e5128;
   color: #d8e9a8;
 }
 
 /* Pricing Section */
-#pricing{
+#pricing {
   padding: 2% 0;
 }
 
-.pricing-heading{
+.pricing-heading {
   color: #4e9f3d;
 }
 
-.pricing-container{
+.pricing-container {
   margin: 3% 4%;
   padding: 0 15%;
 }
 
-.pricing-container .card{
+.pricing-container .card {
   color: #d8e9a8;
   background-color: #1e5128;
   border: 13px solid #d8e9a8;
   border-radius: 13px;
 }
 
-.pricing-container .card .card-title{
-  font-family: 'Roboto', sans-serif; 
-
+.pricing-container .card .card-title {
+  font-family: 'Roboto', sans-serif;
 }
-.pricing-container .card .card-text{
+.pricing-container .card .card-text {
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
-
