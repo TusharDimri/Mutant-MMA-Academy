@@ -255,6 +255,33 @@ textarea {
   padding: 0% 10%;
 }
 
+.address{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px!important;
+  height: 70px;
+  margin: 0 auto;
+  padding: 2% 5px;
+  background-color: black;
+  border: 7px solid #d8e9a8;
+  border-radius: 13px;
+  color: #d8e9a8;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  color: #d8e9a8;
+}
+
+.address-heading{
+  display: block;
+}
+
+.address:hover{
+  color: #4e9f3d!important;
+  border-color: #4e9f3d;
+}
+
 .instructor-card{
   margin: 0 10%;
   background-color: #1e5128!important;
