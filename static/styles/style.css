@@ -140,12 +140,12 @@ p:hover {
   border: 2px solid black;
   display: block;
   margin: auto;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .contact-button:hover {
   background-color: #1e5128;
-  color: #d8e9a8;
+  color: white;
 }
 
 .contact-form form input,
@@ -261,8 +261,10 @@ textarea {
   font-size: 2.5rem;
 }
 
-#about p{
+.about-text{
   padding: 0% 10%;
+  font-size: 1.3rem;
+  color: #4e9f3d;
 }
 
 .address{
@@ -271,7 +273,7 @@ textarea {
   justify-content: center;
   width: 200px!important;
   height: 70px;
-  margin: 0 auto;
+  margin: 35px auto 35px auto;
   padding: 2% 5px;
   background-color: black;
   border: 7px solid #d8e9a8;
