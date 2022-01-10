@@ -319,14 +319,18 @@ h2 {
 
 .fighters-section h2 {
   color: #d8e9a8;
+  font-size: 2rem;
   margin-bottom: 3% !important;
 }
 
 .fighters-section h5 {
+  font-size: 1.3rem;
   font-family: 'Oswald', sans-serif;
 }
 
+
 .fighters-section h6 {
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
 }
 
